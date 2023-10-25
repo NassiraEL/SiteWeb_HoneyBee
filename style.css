@@ -1,0 +1,45 @@
+
+.zoom-bg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(honeyp1.png );
+  
+   background-repeat: no-repeat;
+   border: 1px solid rgb(255, 213, 23);
+   height: 400px;
+   background-size:  100% 100%;
+   animation: zoom 25s  infinite  alternate ;  
+}
+@keyframes zoom{
+25%{
+  background-image: url(honey2.webp);
+  background-repeat: no-repeat;
+  background-size:  100% 100%;
+
+
+}
+50%{
+  background-image: url(honeyBee.webp);
+  background-repeat: no-repeat;
+  background-size:  120% 120%;
+}
+75%{
+  background-image: url(bee.jpg);
+  background-repeat: no-repeat;
+  background-size:  100% 100%;
+}
+ 100%{
+  background-image: url(honey4.png);
+  background-repeat: no-repeat;
+  background-size:  120% 120%;
+}
+}
+.head1{
+  font-size: xxx-large;
+  font-family: "Lucida Handwriting", cursive;
+  color: white;
+  letter-spacing: 50px;
+  text-shadow: 1px 1px 5px black;
+
+}
