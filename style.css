@@ -25,7 +25,7 @@ border-radius: 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: justify;
 }
-h1{
+.h1{
     text-align: center;
 
 }
@@ -33,13 +33,13 @@ h1{
     font-size: 200%;
     color:orange ;
 }
-h3{
+.h3{
     display: flex;
     justify-content: center;
     border: 2px solid orange;
     border-radius: 10px;
 }
-h3:hover{
+.h3:hover{
     color: orange;
     background-color: aliceblue;
     border: 2px solid orange;
@@ -47,3 +47,150 @@ h3:hover{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-shadow: 2px 2px 3px black ;
 }
+
+
+.zoom-bg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(honeyp1.png );
+  
+   background-repeat: no-repeat;
+   border: 1px solid rgb(255, 213, 23);
+   height: 400px;
+   background-size:  100% 100%;
+   animation: zoom 25s  infinite  alternate ;  
+}
+@keyframes zoom{
+25%{
+  background-image: url(honey2.webp);
+  background-repeat: no-repeat;
+  background-size:  100% 100%;
+
+
+}
+50%{
+  background-image: url(honeyBee.webp);
+  background-repeat: no-repeat;
+  background-size:  120% 120%;
+}
+75%{
+  background-image: url(bee.jpg);
+  background-repeat: no-repeat;
+  background-size:  100% 100%;
+}
+ 100%{
+  background-image: url(honey4.png);
+  background-repeat: no-repeat;
+  background-size:  120% 120%;
+}
+}
+.head1{
+  font-size: xxx-large;
+  font-family: "Lucida Handwriting", cursive;
+  color: white;
+  letter-spacing: 50px;
+  text-shadow: 1px 1px 5px black;
+
+}
+
+.source{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: orange;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.bee{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.p{
+    text-align: justify;
+    font-size: large;
+    font-weight: bold;
+}
+
+.info{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.box{
+    margin-left: 60px;
+}
+.box h2{
+    color: #fff;
+   
+}
+
+*{
+  margin: 0;
+    padding: 0;
+}
+
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin-right:130px ;
+    justify-content: space-between;
+}
+
+header{
+   display: flex;
+   align-items: center;
+    color: #ffffff;
+    font-size: large;
+     font-weight: bold;
+   justify-content: space-between;
+   
+}
+nav ul li{
+
+    margin-right: 60px;
+    margin-bottom: 20px;
+    padding: 8px;
+    position: relative;
+    
+}
+.HL{
+
+background-color: black;
+height: 110px;
+position:fixed ;
+width: 100%;
+
+}
+
+
+nav ul li::after{
+content: '';
+width:0;
+height: 3px;
+background-color:#E58707;
+position: absolute;
+left:0;
+bottom: -6px;
+transition: 0.5s;
+
+}
+nav ul li:hover::after{
+    width:100%;
+    cursor: pointer;
+}
+
+.logo{
+margin-bottom: 24px ;
+
+}
+
+
